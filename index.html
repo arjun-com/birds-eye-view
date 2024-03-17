@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/prod.css">
+    <title>Birds View</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"> 
+
+    <script src="./scripts/scaling_handler.js" defer></script>
+    <script src="./scripts/bird_handler.js" defer></script>
+</head>
+<body id = "root" class = "relative">
+    <div id = "bird-modal" class = "px-10  py-4 overflow-hidden absolute z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-fit w-[500px] rounded-lg bg-white hidden opacity-0 transition-opacity">
+        <button class = "rounded-full absolute right-2 top-2" onclick = "toggleBirdModal()">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+            </svg>
+        </button>
+
+        <div class = "bg-gray-100 rounded-lg w-full my-4 p-2">
+            <h1 id = "bird-modal-name" class = "text-center font-bold text-2xl text-gray-800"></h1>
+        </div>
+
+        <img class = "w-full rounded-lg my-4" src="" alt="" id = "bird-modal-thumbnail">
+
+        <div class = "bg-gray-100 rounded-lg w-full my-4 p-2">
+            <p id = "bird-modal-desc" class = "text-left font-bold text-xl text-gray-800"></p>
+        </div>
+
+        <audio id = "bird-modal-audio" controls class = "w-full rounded-lg bg-gray-100 ring-2 ring-indigo-200 ring-offset-1">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <img class = "w-full h-full object-cover" src="./media/bg.jpg" alt="">
+</body>
+</html>
