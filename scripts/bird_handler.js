@@ -28,6 +28,15 @@ const birds = [
         "desc": "During the breeding season, which commences at the onset of summer, their vocalizations become pronounced and persistent, particularly in the early mornings. Their call is a repetitive “Kot-roo…Kotroo…” that begins with an explosive trrr. These avian creatures primarily feed on fruits and serve a crucial function in forests by aiding in seed dispersal.",
         "top": "-100px",
         "left": "400px"
+    },
+    {
+        "name": "Rose Ringed Parakeet",
+        "img": "./bird_images/rose_ringed_parakeet-removebg-preview.png",
+        "thumbnail": "./bird_images/rose ringed parakeet.jpg",
+        "sound": "./bird_sounds/Rose-ringed Parakeet (Psittacula krameri).mp3",
+        "desc": "The male adults exhibit a pink and black neck ring, while the hens and immature birds of both genders either lack neck rings or display subtle, shadow-like pale to dark grey neck rings. Both males and females possess the ability to mimic human speech.",
+        "top": "500px",
+        "left": "1200px"
     }
 ]
 
